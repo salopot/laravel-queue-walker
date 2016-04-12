@@ -2,7 +2,7 @@
 
 namespace Salopot\QueueWalker\Console;
 
-use Salopot\Walker;
+use Salopot\QueueWalker\Walker;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Queue\Job;
 use Symfony\Component\Console\Input\InputOption;
