@@ -14,7 +14,7 @@ Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Either run
+Require this package with composer using the following command:
 
 ```
 composer require salopot/laravel-queue-walker "dev-master"
@@ -40,11 +40,11 @@ Usage
 Run artisan command for execute all jobs awaiting in queue:
 
 ```
-php artisan vendor:publish
+php artisan queue:walk
 ```
 
 or add call command to laravel scheduler (see: https://laravel.com/docs/5.1/scheduling)
 
 ```
-$schedule->command('queue:work')->everyMinute();
+$schedule->command('queue:walk')->everyMinute();
 ```
